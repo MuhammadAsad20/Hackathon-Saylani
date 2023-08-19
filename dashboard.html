@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
+</head>
+<body>
+  <header class="text-gray-600 body-font bg-indigo-500">
+    <div class="container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 docs-creator">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+       
+        <a class="mr-5 hover:text-gray-900 docs-creator">Username</a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Logout
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+<header class="text-gray-600 bg-gray-200 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 docs-creator">
+     
+      <h1 class="ml-3  text-2xl">Dashboard</h1>
+    </a>
+    
+  </div>
+</header>
+
+
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    
+    <div class="lg:w-1/2 md:w-2/3 mx-auto ">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-full">
+          <div class="relative">
+            
+            <input type="text" placeholder="Enter title here" id="mytxt1" name="name" class="w-full border-2 border-indigo-500 bg-gray-100 bg-opacity-50 hover:border-4 hover:border-indigo-900 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        
+        <div class="p-2 w-full">
+          <div class="relative">
+            
+            <textarea id="mytxt2"  placeholder="What is your mind"  name="message" class="w-full border-2 border-indigo-500 bg-gray-100 bg-opacity-50 hover:border-4 hover:border-indigo-900 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex  text-white bg-indigo-500 border-0 py-1 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" id="add">Publish Blog</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<div id="box"></div>
+<script src="fire.js" ></script>
+</body>
+</html>
